@@ -6,6 +6,6 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    return 'hello';
+    return 'hello from backend on nest-test';
   }
 }
