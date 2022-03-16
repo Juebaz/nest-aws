@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "deploy": "npm ci && npm run build && npm run start",
+    "deploy": "NODE_OPTIONS=--max_old_space_size=4096 && npm ci && npm run build && npm run start",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
