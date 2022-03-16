@@ -11,4 +11,6 @@ COPY . /src/
 # Make port 80 available to the world outside this container
 EXPOSE 8080
 # Run the app when the container launches
+ENV NODE_OPTIONS=--max-old-space-size=2656
+
 CMD ["npm", "start"]
