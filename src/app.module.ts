@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AuthModule } from './auth/auth.module';
+import { FileModule } from './file/file.module';
 import { getDatabaseConnectionString } from './initDatabaseConnection';
 import { PostsModule } from './posts/posts.module';
 import { UsersModule } from './users/users.module';
@@ -14,6 +15,7 @@ import { UsersModule } from './users/users.module';
     UsersModule,
     PostsModule,
     AuthModule,
+    FileModule
   ],
   controllers: [AppController]
 })

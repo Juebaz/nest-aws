@@ -4,6 +4,7 @@ import * as cookieParser from 'cookie-parser';
 import 'dotenv/config';
 import { AppModule } from './app.module';
 import { CustomExceptionFilter } from './commons/exceptions-filters/custom-exception.filter';
+
 async function bootstrap() {
   const port = process.env.PORT || 8080;
 
